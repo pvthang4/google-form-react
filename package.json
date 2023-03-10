@@ -1,0 +1,75 @@
+{
+  "name": "google-form-react",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@react-md/icon": "^5.1.3",
+    "@react-oauth/google": "^0.8.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tippyjs/react": "^4.2.6",
+    "@types/jest": "^27.5.2",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^16.18.11",
+    "@types/react": "^18.0.27",
+    "@types/react-beautiful-dnd": "^13.1.3",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-modal": "^3.13.1",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.26",
+    "axios": "^1.3.3",
+    "classnames": "^2.3.2",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "5.0.1",
+    "react-tippy": "^1.4.0",
+    "react-toastify": "^9.1.1",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [
+    "google",
+    "form",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC"
+}

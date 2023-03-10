@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(0deg, #f5f5f5, #f5f5f5), #0080c1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.chart__block {
+  width: 350px;
+  height: 350px;
+}
+.ReactModal__Overlay {
+  z-index: 11;
+}
+.react-resizable {
+  position: relative;
+}
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iNnB4Ij48ZyBvcGFjaXR5PSIwLjMwMiI+PHBhdGggZD0iTSA2IDYgTCAwIDYgTCAwIDQuMiBMIDQgNC4yIEwgNC4yIDQuMiBMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+");
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+}
+.react-resizable-handle-sw {
+  bottom: 0;
+  left: 0;
+  cursor: sw-resize;
+  transform: rotate(90deg);
+}
+.react-resizable-handle-se {
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+.react-resizable-handle-nw {
+  top: 0;
+  left: 0;
+  cursor: nw-resize;
+  transform: rotate(180deg);
+}
+.react-resizable-handle-ne {
+  top: 0;
+  right: 0;
+  cursor: ne-resize;
+  transform: rotate(270deg);
+}
+.react-resizable-handle-w,
+.react-resizable-handle-e {
+  top: 50%;
+  margin-top: -10px;
+  cursor: ew-resize;
+}
+.react-resizable-handle-w {
+  left: 0;
+  transform: rotate(135deg);
+}
+.react-resizable-handle-e {
+  right: 0;
+  transform: rotate(315deg);
+}
+.react-resizable-handle-n,
+.react-resizable-handle-s {
+  left: 50%;
+  margin-left: -10px;
+  cursor: ns-resize;
+}
+.react-resizable-handle-n {
+  top: 0;
+  transform: rotate(225deg);
+}
+.react-resizable-handle-s {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.fui-loading-ripple {
+  display: inline-block;
+  top: 50%;
+  position: fixed;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, 0);
+  width: 80px;
+  height: 80px;
+}
+.loading-bg {
+  position: fixed;
+  content: "";
+  top: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.22);
+  height: 100%;
+  width: 100%;
+}
+.fui-loading-ripple div {
+  position: absolute;
+  border: 4px solid #00a0e9;
+  opacity: 1;
+  border-radius: 50%;
+  animation: giaFU 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.fui-loading-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes giaFU {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+.tool-tip-answer {
+  width: 100% !important;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.pagination-item {
+  padding: 0 12px;
+  height: 32px;
+  text-align: center;
+  margin: auto 4px;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  letter-spacing: 0.01071em;
+  border-radius: 16px;
+  line-height: 1.43;
+  font-size: 13px;
+  min-width: 32px;
+}
+.pagination-item.dots:hover {
+  background-color: transparent;
+  cursor: default;
+}
+.pagination-item:hover {
+  cursor: pointer;
+}
+.pagination-item.selected {
+  color: #22c1cb;
+}
+.pagination-item .arrow::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+}
+.pagination-item .arrow.left {
+  transform: rotate(-135deg) translate(-50%);
+}
+.pagination-item .arrow.right {
+  transform: rotate(45deg);
+}
+.pagination-item.disabled {
+  pointer-events: none;
+}
+.pagination-item.disabled .arrow::before {
+  border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+}
+.pagination-item.disabled:hover {
+  background-color: transparent;
+  cursor: default;
+}
+@media (max-width: 1024px) {
+  .pagination-item {
+    font-size: 11px;
+    min-width: 20px;
+    padding: 0 6px;
+    margin: auto 0px;
+  }
+}
+@media (max-width: 480px) {
+}
